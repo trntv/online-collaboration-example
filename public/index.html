@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shared Editor</title>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/diff_match_patch.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+        #editor {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Whiteboard for onthe.io</h1>
+        <textarea id="editor" cols="30" rows="10"></textarea>
+    </div>
+    <script>
+        window.onload = function() {
+            new Whiteboard('editor');
+        }
+    </script>
+</body>
+</html>
