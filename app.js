@@ -59,7 +59,7 @@ app.use(function(err, req, res, next) {
 httpServer.on('error', function onError(error) {
   if (error.syscall !== 'listen') {
     throw error;
-  }
+  }b
 
   var bind = typeof port === 'string'
       ? 'Pipe ' + port
